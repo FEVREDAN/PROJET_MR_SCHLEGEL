@@ -7,10 +7,12 @@
     </head>
     <body>
         <header>
-            <img src="images/logo/SportAddict.png" alt="Logo de Sport Addict">
+            <div class="eleLOGO">
+                <img alt="LOGO" src="images/logo/SportAddict.png"/>
+            </div> 
             <nav>
                 <ul>
-                    <li>Idée d'activité</li>
+                    <li>Idée d'activité</a></li>
                     <li>Les événements à venir</li>
                     <li>S'inscrire</li>
                 </ul>
@@ -26,10 +28,122 @@
             <BR>
             Plus de 3500 sportifs nous ont déjà rejoints
         </div>
+        
+        <label> Choissisez la catégorie:
+            <select id="couleur">
+                <option value="">Choissisez la catégorie</option>
+                <option value="#mon ancre">Idée d'activité</option>
+                <option value="Les plus populaire"><a href="#Les plus populaire">Les plus populaire</a></option>
+                <option value="Les événements à venir"><a href="#Les événements à venir">Les événements à venir</a></option>
+            </select>
+        </label>
 
-
-        <div>
-            Idée d'activité
+        <div class="vignettes"id="Idée d'activité">
+            <div class="eleImage">
+                <img alt="Basketball" src="images/activites/basketball.jpg"/>
+                <div>
+                    <h2 class="legende" href="#1">Le Basket</a>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Boxe" src="images/activites/boxe.jpg"/>
+                <div>
+                    <h2 class="legende">La Boxe</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Crossfit" src="images/activites/crossfit.jpg"/>
+                <div>
+                    <h2 class="legende">Le Crossfit</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Fitness" src="images/activites/fitness.jpg"/>
+                <div>
+                    <h2 class="legende">Le Fitness</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Karaté" src="images/activites/karaté.jpg"/>
+                <div>
+                    <h2 class="legende">Le Karaté</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Musculation" src="images/activites/musculation.jpg"/>
+                <div>
+                    <h2 class="legende">La Musculation</h2>
+                </div>
+            </div> 
+        </div>
+        <br>
+        <br>
+        <div class="vignettes"id="Les plus populaire">
+            <div class="eleImage">
+                <img alt="Running" src="images/populaire/running.jpg"/>
+                <div>
+                    <h2 class="legende">La Course à Pied</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Yoga" src="images/populaire/yoga.jpg"/>
+                <div>
+                    <h2 class="legende">Le Yoga</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Natation" src="images/populaire/natation.jpg"/>
+                <div>
+                    <h2 class="legende">La Natation</h2>
+                </div>
+            </div> 
+        </div>
+        <br>
+        <br>
+        <div class="vignettes"id="Les événements à venir">
+            <div class="eleImage">
+                <img alt="Canoe" src="images/evenement/canoe.jpg"/>
+                <div>
+                    <h2 class="legende">Descente des chutes éternelles</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Football" src="images/evenement/football.jpg"/>
+                <div>
+                    <h2 class="legende">Recrutement de nouveaux joueurs</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Motocross" src="images/evenement/motocross.jpg"/>
+                <div>
+                    <h2 class="legende">Enduro de la veille de l'automne</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Planche à voile" src="images/evenement/plancheAvoile.jpg"/>
+                <div>
+                    <h2 class="legende">Exhibition intercontinentale des masters Pro</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Plongée" src="images/evenement/plongée.jpg"/>
+                <div>
+                    <h2 class="legende">Découverte des gorges insondables avec une équipe pro</h2>
+                </div>
+            </div> 
+            <div class="eleImage">
+                <img alt="Triathlon" src="images/evenement/triathlon.jpg"/>
+                <div>
+                    <h2 class="legende">Ironman de Noël</h2>
+                </div>
+            </div> 
+        </div>
+        
+        <section>
+            <div>
+                <h2 class="legende2" id="1">Idée d'activité</h2>
+            </div>
+            
             <BR>
             <img src="./images/activites/basketball.jpg" alt="Basketball">
             <BR>
@@ -68,9 +182,12 @@
             Aussi puissant qu'harmonieux
             <BR>
             Afficher plus
-        </div>
+        </section>
         <div>
-            Les plus populaires     
+            <div>
+                <h2 class="legende2">Les plus populaires</h2>
+            </div>
+                 
             <BR>               
             <img src="./images/populaire/running.jpg" alt="Running">
             <BR>    
@@ -92,7 +209,10 @@
             <br>
         </div>
         <div>
-            Les événements à venir
+            <div>
+                <h2 class="legende2">Les événements à venir</h2>
+            </div>
+            
             <BR>
             <img src="./images/evenement/canoe.jpg" alt="Canoe">
             <BR>
