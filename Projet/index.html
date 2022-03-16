@@ -2,7 +2,8 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style/style.css">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <script src="js/java.js" defer></script>
         <title>Sport Addict  - Le sport à tous les niveaux</title>
     </head>
     <body>
@@ -12,238 +13,306 @@
             </div> 
             <nav>
                 <ul>
-                    <li>Idée d'activité</a></li>
+                    <li>Idée d'activité</li>
                     <li>Les événements à venir</li>
                     <li>S'inscrire</li>
                 </ul>
             </nav>
         </header> 
-    
+        
+       
+        
         <div>
             <div class="typewriter">
-                <h1>Trouvez le sport qui vous correspond.
-                <br>En plein centre ville ou en pleine nature</h1>
+                <h1>Trouvez le sport qui vous correspond. En plein centre ville ou en pleine nature</h1>
             </div>
-            Trouvez le sport qui vous correspond
-            En plein centre ville ou en pleine nature
+
             <br>
             <input type="text" size="20">
             <a href="#">Rechercher</a>
             <BR>
             Plus de 3500 sportifs nous ont déjà rejoints
         </div>
-        
-        <label> Choissisez la catégorie:
-            <select id="couleur">
-                <option value="">Choissisez la catégorie</option>
-                <option value="#mon ancre">Idée d'activité</option>
-                <option value="Les plus populaire"><a href="#Les plus populaire">Les plus populaire</a></option>
-                <option value="Les événements à venir"><a href="#Les événements à venir">Les événements à venir</a></option>
-            </select>
-        </label>
+        <select class="select" >
+            <option value="">Choissisez la catégorie</option> 
+            <option value="IdeeActivite">Idée d'activité</option> 
+            <option value="LesPlusPopulaires">Les plus populaires</option>
+            <option value="LesEvenementsAvenir">Les événements à venir</option>
+        </select>
 
-        <div class="vignettes"id="Idée d'activité">
-            <div class="eleImage">
+        
+        <!--<select onchange="window.location.href=this.value;">
+            <option value="">Choissisez la catégorie</option> 
+            <option value="#Idée d'activité"><a href="#Idée d'activité">Idée d'activité</a></option> 
+            <option value="#Les plus populaires"><a href="#Les plus populaires">Les plus populaires</a></option>
+            <option value="#Les événements à venir"><a href="#Les événements à venir">Les événements à venir</a></option>
+        </select>-->
+        
+
+        <div class="vignettes"id="IdeeActivite">
+
+            <div class="eleImage basket">
+                
                 <img alt="Basketball" src="images/activites/basketball.jpg"/>
-                <div>
-                    <a class="sport" href="#1">Le Basket</a>
+                <div class="contain">
+                    <a class="sport" href="#1">Basket</a>
+                     
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage boxe">
                 <img alt="Boxe" src="images/activites/boxe.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#2">La Boxe</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage crossfit" >
                 <img alt="Crossfit" src="images/activites/crossfit.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#3">Le Crossfit</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage fitness">
                 <img alt="Fitness" src="images/activites/fitness.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#4">Le Fitness</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage karate">
                 <img alt="Karaté" src="images/activites/karaté.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#5">Le Karaté</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage musculation">
                 <img alt="Musculation" src="images/activites/musculation.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#6">La Musculation</a>
                 </div>
             </div> 
         </div>
-        <br>
-        <br>
-        <div class="vignettes"id="Les plus populaire">
-            <div class="eleImage">
+        
+
+        <div class="vignettes"id="LesPlusPopulaires">
+
+            <div class="eleImage running">
                 <img alt="Running" src="images/populaire/running.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#7">La Course à Pied</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage yoga">
                 <img alt="Yoga" src="images/populaire/yoga.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#8">Le Yoga</a>
                 </div>
-            </div> 
-            <div class="eleImage">
+            </div>
+
+            <div class="eleImage natation">
                 <img alt="Natation" src="images/populaire/natation.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#9">La Natation</a>
                 </div>
             </div> 
         </div>
-        <br>
-        <br>
-        <div class="vignettes"id="Les événements à venir">
-            <div class="eleImage">
+        
+
+        <div class="vignettes" id="LesEvenementsAvenir">
+
+            <div class="eleImage canoe">
                 <img alt="Canoe" src="images/evenement/canoe.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#10">Descente des chutes éternelles</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage recrut">
                 <img alt="Football" src="images/evenement/football.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#11">Recrutement de nouveaux joueurs</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage moto">
                 <img alt="Motocross" src="images/evenement/motocross.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#12">Enduro de la veille de l'automne</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage voile">
                 <img alt="Planche à voile" src="images/evenement/plancheAvoile.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#13">Exhibition intercontinentale des masters Pro</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage plonge">
                 <img alt="Plongée" src="images/evenement/plongée.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#14">Découverte des gorges insondables avec une équipe pro</a>
                 </div>
             </div> 
-            <div class="eleImage">
+
+            <div class="eleImage triathlon">
                 <img alt="Triathlon" src="images/evenement/triathlon.jpg"/>
-                <div>
+                <div class="contain">
                     <a class="sport" href="#15">Ironman de Noël</a>
                 </div>
             </div> 
         </div>
         
-        <section>
-            <div>
-                <h2  class="legende2">Idée d'activité</h2>
-            </div>
-            
-            <BR>
-            <img id="1" src="./images/activites/basketball.jpg" alt="Basketball" >
-            <BR>
-            Le basket
-            <BR>
-            Gérer le rebond
-            <BR>
-            <img id="2" src="./images/activites/boxe.jpg" alt="Boxe">
-            <BR>
-            La boxe
-            <BR>
-            Mouvement de jambes et crochet du droit
-            <BR>
-            <img id="3" src="./images/activites/crossfit.jpg" alt="Crossfit">
-            <BR>
-            Le crossfit
-            <BR>
-            Pour devenir un athlète complet
-            <BR>
-            <img id="4" src="./images/activites/fitness.jpg" alt="Fitness">
-            <BR>
-            Le fitness
-            <BR>
-            Harmoniser son corps
-            <BR>
-            <img id="5" src="./images/activites/karaté.jpg" alt="Karaté">
-            <BR>
-            Le karaté
-            <BR>
-            Les katas pour éviter la cata
-            <BR>
-            <img id="6" src="./images/activites/musculation.jpg" alt="Musculation">
-            <BR>
-            La musculation 
-            <BR>
-            Aussi puissant qu'harmonieux
-            <BR>
-            Afficher plus
-        </section>
         <div>
-            <div>
-                <h2 class="legende2">Les plus populaires</h2>
+            <!-- <div>
+                <h2  id="Idée d'activité" class="legende2">Idée d'activité</h2>
+            </div> -->
+            <div id="basket" class="hidden">
+                <img class="eleImage2" id="1" src="./images/activites/basketball.jpg" alt="Basketball"/>
+                <BR>
+                    Le basket
+                <BR>
+                    Gérer le rebond
             </div>
-                 
-            <BR>               
-            <img id="7" src="./images/populaire/running.jpg" alt="Running">
-            <BR>    
-            La course à pied
-            <BR>    
-            Une paire de basket et à nous les grands espaces
-            <br>
-            <img id="8" src="./images/populaire/yoga.jpg" alt="Yoga">
-            <BR>    
-            Le yoga
-            <BR>    
-            Calme, méditation et musculation interne 
-            <br>
-            <img id="9" src="./images/populaire/natation.jpg" alt="Natation">
-            <BR>    
-            La natation
-            <BR>    
-            Force et justesse du mouvement
-            <br>
-        </div>
-        <div>
-            <div>
-                <h2 class="legende2">Les événements à venir</h2>
-            </div>
-            
-            <BR>
-            <img id="10" src="./images/evenement/canoe.jpg" alt="Canoe">
-            <BR>
-            Descente des chutes éternelles
-            <BR>
-            <img id="11" src="./images/evenement/football.jpg" alt="Football">
-            <BR>
-            Recrutement des nouveaux joueurs
-            <BR>
-            <img id="12" src="./images/evenement/motocross.jpg" alt="Mottocross">
-            <BR>
-            Enduro de la veille de l'automne
-            <BR>
-            <img id="13" src="./images/evenement/plancheAvoile.jpg" alt="Planche">
-            <BR>
-            Exhibition intercontinentale des masters Pro
-            <BR>
-            <img id="14" src="./images/evenement/plongée.jpg" alt="Plongée">
-            <BR>
-            Découverte des gorges insondables avec une équipe pro
-            <BR>
-            <img id="15" src="./images/evenement/triathlon.jpg" alt="Triathlon">
-            <BR>
-            Ironman de Noël
-            <BR>
-        </div>
+          
 
+            <div id="boxe" class="hidden">
+                <img class="eleImage2" id="2" src="./images/activites/boxe.jpg" alt="Boxe">
+                <BR>
+                    La boxe
+                <BR>
+                    Mouvement de jambes et crochet du droit
+            </div>
+
+            <div id="crossfit" class="hidden">
+                <img class="eleImage2"  id="3" src="./images/activites/crossfit.jpg" alt="Crossfit">
+                <BR>
+                    Le crossfit
+                <BR>
+                    Pour devenir un athlète complet
+            </div>
+            
+            
+            <div id="fitness" class="hidden">
+                <img class="eleImage2"  id="4" src="./images/activites/fitness.jpg" alt="Fitness">
+                <BR>
+                    Le fitness
+                <BR>
+                    Harmoniser son corps
+            </div>
+            
+            <div id="karate" class="hidden">
+                <img class="eleImage2"  id="5" src="./images/activites/karaté.jpg" alt="Karaté">
+                <BR>
+                Le karaté
+                <BR>
+                Les katas pour éviter la cata
+            </div>
+            
+            <div id="musculation" class="hidden">
+                <img class="eleImage2"  id="6" src="./images/activites/musculation.jpg" alt="Musculation">
+                <BR>
+                La musculation 
+                <BR>
+                Aussi puissant qu'harmonieux
+                <BR>
+            </div>
+            
+        </div>
+        <div>
+            <!-- <div>
+                <h2 id="Les plus populaires" class="legende2">Les plus populaires</h2>
+            </div> -->
+            
+               
+            <div id="running" class="hidden">
+                <img class="eleImage2"  id="7" src="./images/populaire/running.jpg" alt="Running">
+                <BR>    
+                La course à pied
+                <BR>    
+                Une paire de basket et à nous les grands espaces
+            </div>            
+            
+            <div id="yoga" class="hidden">
+                <img class="eleImage2"  id="8" src="./images/populaire/yoga.jpg" alt="Yoga">
+                <BR>    
+                Le yoga
+                <BR>    
+                Calme, méditation et musculation interne 
+                <br>
+            </div>
+        
+            <div id="natation" class="hidden">
+                <img class="eleImage2"  id="9" src="./images/populaire/natation.jpg" alt="Natation">
+                <BR>    
+                La natation
+                <BR>    
+                Force et justesse du mouvement
+                <br>
+            </div>
+            
+        </div>
+        <div>
+            <!-- <div>
+                <h2 id="Les événements à venir" class="legende2">Les événements à venir</h2>
+            </div> -->
+            <div id="canoe" class="hidden">
+                <img class="eleImage2"  id="10" src="./images/evenement/canoe.jpg" alt="Canoe">
+                <BR>
+                Descente des chutes éternelles
+                <BR>
+            </div>
+            
+            <div id="football" class="hidden">
+                <img class="eleImage2"  id="11" src="./images/evenement/football.jpg" alt="Football">
+                <BR>
+                Recrutement des nouveaux joueurs
+                <BR>
+            </div>
+            
+            <div id="moto" class="hidden">
+                <img class="eleImage2"  id="12" src="./images/evenement/motocross.jpg" alt="Mottocross">
+                <BR>
+                Enduro de la veille de l'automne
+                <BR>
+            </div>
+            
+            <div id="voile" class="hidden">
+                <img class="eleImage2"  id="13" src="./images/evenement/plancheAvoile.jpg" alt="Planche">
+                <BR>
+                Exhibition intercontinentale des masters Pro
+                <BR>
+            </div>
+            
+            <div id="plongee" class="hidden">
+                <img class="eleImage2"  id="14" src="./images/evenement/plongée.jpg" alt="Plongée">
+                <BR>
+                Découverte des gorges insondables avec une équipe pro
+                <BR>
+            </div>
+            
+            <div id="triathlon" class="hidden">
+                <img class="eleImage2"  id="15" src="./images/evenement/triathlon.jpg" alt="Triathlon">
+                <BR>
+                Ironman de Noël
+                <BR>
+            </div>
+            
+        </div>
+        <!--<div class="clikEvent">
+            <button id="btn">Appuyez !</button>
+            <br>
+            <img id="img2" src="./images/activites/basketball.jpg"  alt="">
+        </div
+        <div class="clikEvent">
+            <button id="btn2">Appuyez !</button>
+            <br>
+            <img src="./images/activites/basketball.jpg" id="img2" alt="">  
+        </div>>-->
         <footer>
             A propos
             <ul>
@@ -262,5 +331,6 @@
                 <li><a href="#">Nous contacter</a></li>
             </ul>
         </footer>
+        
     </body>
 </html>

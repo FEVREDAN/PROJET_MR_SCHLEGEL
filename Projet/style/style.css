@@ -1,14 +1,16 @@
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    overflow: hidden; /* Garantit que le contenu n'est pas révélé avant l'animation */
+    border-right: .15em solid orange; /* Le curseur de la machine à écrire */
+    white-space:nowrap; /* Conserve le contenu sur une seule ligne */
+    overflow-wrap: anywhere;
+    margin: 10% auto; /* Donne cet effet de défilement au fur et à mesure de la saisie */
+    letter-spacing: .15em; /* Ajuster au besoin */
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      blink-caret 0.75s step-end;
   }
-  
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -18,12 +20,35 @@
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    100% { border-color: orange; }
 }
 
+header {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: rgb(28, 29, 28);
+    
+    
+}
+footer {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: rgb(28, 29, 28);
+    
+    
+}
 
 html {
     background-color: rgb(65, 63, 63);
+}
+
+.contain {
+    background-color: aqua;
+    height: 40px;
 }
 p {
     border: 2px dotted blue;
@@ -34,12 +59,11 @@ p {
     height : 100px;
     overflow : scroll;
     */
-
 }
 a {
     text-decoration: none;
     background-position: center;
-    font-size: 30px;
+    font-size: 20px;
     color: black;
 
 }
@@ -66,14 +90,30 @@ a {
     align-content: center;
 }
 .eleImage {
-    background-color: gray;
-    width : 30%;
-    height : 300px;
+    
+    
+    width : 20%;
+    height :200px;
     margin : auto;
     margin :10px;
     border-radius : 20px;
     box-shadow: 10px 10px 5px 5px  black;
 }
+.eleImage2 {
+    
+    width : 600px;
+    height : 600px;
+    margin : auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.contour {
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 5px  rgb(229, 245, 5);
+}
+
 .eleImage:hover {
     background-color: rgb(51, 255, 0);
 }
@@ -89,16 +129,33 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  
-    
+    background-color: rgb(50, 54, 49);
+    box-shadow: 10px 10px 5px 5px  rgb(19, 19, 18);
 }
+
 img {
     
     width : 100%;
-    height : 80%;
+    height : 77%;
     object-fit : cover; 
     border-radius : 20px;
 }
+.img2 {
+    
+    visibility: hidden;
+    width : 100%;
+    height : 80%;
+    /*object-fit : cover; */
+    border-radius : 20px;
+}
 
+.hidden {
+display: none;
+}
+
+.show {
+    visibility: visible;
+}
 .legende {
     text-align: center;
 }
