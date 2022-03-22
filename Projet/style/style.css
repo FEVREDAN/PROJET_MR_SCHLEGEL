@@ -6,25 +6,25 @@
     overflow-wrap: anywhere;
     margin: 10% auto; /* Donne cet effet de défilement au fur et à mesure de la saisie */
     letter-spacing: .15em; /* Ajuster au besoin */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret 0.75s step-end;
+    animation:  
+        typing 3.5s steps(40, end), 
+        blink-caret 0.75s step-end; 
   }
 
   /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+   @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+  } 
   
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    100% { border-color: orange; }
-}
-
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        100% { border-color: orange }
+ }
 header {
-   
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  
@@ -38,22 +38,27 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;  
     background-color: rgb(28, 29, 28);
-    
+    margin-top: 30px;
     
 }
-
+body {
+    margin: 0;
+}
 html {
-    background-color: rgb(65, 63, 63);
+  background-color: rgb(65, 63, 63);
+  scroll-behavior: smooth;
 }
 
 .contain {
-    background-color: aqua;
-    height: 40px;
+    
+    height: 46px;
 }
 p {
-    border: 2px dotted blue;
+    text-align: center;
+    
     margin : 20px;
     padding : 20px;
+    font-size:xx-large;
     /* Propriétés pour tester l'overflow
     width : 200px;
     height : 100px;
@@ -89,6 +94,10 @@ a {
     height : 500px; 
     align-content: center;
 }
+.right{
+    display:block;
+    text-align: right;
+}
 .eleImage {
     
     
@@ -118,16 +127,22 @@ a {
     background-color: rgb(51, 255, 0);
 }
 .eleLOGO {
-    width : 10%;
-    height : 10%;
+    margin-top: 10px;
+    
+    height : 100%;
     object-fit : cover; 
     border-radius : 20px;
     text-align: center;
 }
-
+#texte {
+    border:2px dotted;
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+}
 .vignettes {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-between;  
     background-color: rgb(50, 54, 49);
     box-shadow: 10px 10px 5px 5px  rgb(19, 19, 18);
@@ -138,7 +153,7 @@ img {
     width : 100%;
     height : 77%;
     object-fit : cover; 
-    border-radius : 20px;
+    border-radius : 18px;
 }
 .img2 {
     
@@ -160,7 +175,7 @@ display: none;
     text-align: center;
 }
 
-.sport{
+.sport {
     display: block;
     text-align: center;
     
@@ -172,6 +187,16 @@ display: none;
     text-align: center;
     border-radius : 20px;
     
+}
+#scroll_to_top {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 30px;
+}
+#scroll_to_top img {
+    width: 70px;
 }
 @media screen and (max-width: 1200px)
 {
